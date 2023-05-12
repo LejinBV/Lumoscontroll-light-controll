@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lumos Controll</title>
+</head>
+<body>
+  <div class="banner-wrapp">
+   
+  <div class="controller-wrap">
+    <div class="sw-row">
+      <div class="sw-col">
+        <div class="switchWrap">
+          <label class="switch" for="onOff">
+          <input checked type="checkbox" id="onOff" />
+          <div class="handle round">
+          </div>
+          </label>
+          <span> Light On/Off</span>
+        </div>
+      </div>
+      
+      
+      <div class="sw-col">
+        <div class="switchWrap">
+         <label class="switch" for="lightSelect">
+          <input  type="checkbox" id="lightSelect" />
+          <div class="handle round warmCool"></div>
+         </label>
+         <span>Warm/Cool</span>
+        </div>
+      </div>
+    </div>
+      
+    <div class="faderLabel">
+      Light Fader
+    </div>
+    <input class="range" type="range" id="range" min=".0" max="1" step="0.1" value="2" list="rangelist" />
+  </div>
+  <div id="form" class="light-off ovelay-bg">
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
